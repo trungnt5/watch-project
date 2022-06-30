@@ -1,5 +1,5 @@
 <template>
-  <div class="WatchLock">
+  <div class="WatchLock py-6">
     <div class="LockType">
       <span class="text-base font-bold">Loại khóa</span>
 
@@ -14,20 +14,19 @@
             <v-radio
               :label="item.text"
               :value="item.value"
-              class="radio"
+              class="radio font-bold text-dark"
               active-class="checked"
               color="blue"
             ></v-radio>
-            <div class="w-full ml-7 mt-1 text-green">{{ item.bonus }}</div>
+            <div class="w-full ml-6 text-green text-sm">{{ item.bonus }}</div>
           </v-radio-group>
           
         </div>
       </div>
     </div>
 
-    <div class="LockColor">
+    <div class="LockColor mt-4">
       <span class="text-base font-bold">Màu khóa</span>
-
       <v-col class="d-flex px-0" cols="4" sm="4">
       <v-select
         :items="items1"

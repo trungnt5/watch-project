@@ -1,9 +1,9 @@
 <template>
-  <div class="WatchFiber pb-12">
+  <div class="WatchFiber py-6">
     <div class="Fiber">
-      <div class="flex justify-between">
-        <div class="w-2/5 pr-2 flex flex-col">
-          <span class="text-base font-bold">Size chiều rộng dây</span>
+      <div class="grid grid-cols-2 gap-2">
+        <div class="w-full pr-2 flex flex-col">
+          <span class="text-base font-bold mb-1">Size chiều rộng dây</span>
           <v-select
             :items="items1"
             placeholder="Chọn size chiều rộng dây"
@@ -12,8 +12,8 @@
             height="41"
           ></v-select>
         </div>
-        <div class="w-2/5 pl-2 flex flex-col">
-          <span class="text-base font-bold">Size chiều dài dây</span>
+        <div class="w-full pl-2 flex flex-col">
+          <span class="text-base font-bold mb-1">Size chiều dài dây</span>
           <v-select
             :items="items1"
             placeholder="Chọn size chiều dài dây"
@@ -24,7 +24,6 @@
           <button type="button" class="text-left ml-3 mt-3 text-xs text-picklock">
             Tham khảo Bảng Kích thước chiều dài khuyến nghị
           </button>
-          >
         </div>
       </div>
 
@@ -48,8 +47,9 @@
             :class="item.class"
             class="border w-44 bg-picklock border-picklock relative h-28"
           ><span class="text-center align-middle top-1/2 absolute mx-auto w-full text-white text-xs"> Ảnh mô phỏng không độn  </span></div>
-          <v-radio-group v-model="row" row class="mt-2">
+          <v-radio-group v-model="row" row plain class="mt-2">
             <v-radio
+            plain
               :label="item.name"
               :value="item.name"
               class="radio text-center text-sm"
@@ -102,7 +102,7 @@ export default {
 .v-input__control {
   max-height: 41px !important;
 }
-.v-icon.v-icon {
+.text-sm .v-input--selection-controls__input  .v-icon.v-icon {
     font-size: 12px;
     justify-content: left   ;
 }

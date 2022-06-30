@@ -1,5 +1,5 @@
 <template>
-  <div class="WatchFace">
+  <div class="WatchFace py-6">
     <span class="text-base font-bold">Hãng đồng hồ</span>
     <v-col class="d-flex px-0" cols="4" sm="4">
       <v-select

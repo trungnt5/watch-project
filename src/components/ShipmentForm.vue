@@ -1,6 +1,5 @@
 <template>
-  <v-container>
-    <v-card max-width="823" class="px-5 py-7">
+  <div class="form">
       <v-col cols="12">
         <span class="font-bold">Họ và tên</span>
         <v-col cols="12" class="px-0">
@@ -107,8 +106,7 @@
           >
         </v-col>
       </v-col>
-    </v-card>
-  </v-container>
+  </div>
 </template>
 
 <script>

@@ -17,7 +17,10 @@ module.exports = {
       'picklock': '#1790E9',
       'white': '#ffffff',
       'deposit': '#31C179',
-      'gray': '#CCCCCC'
+      'gray': '#CCCCCC',
+      'header-expansion':'#020A1C',
+      'background':'#F7F7F7',
+      'footer-up':'#010610'
     },
   },
   plugins: [],

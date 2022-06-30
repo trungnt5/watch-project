@@ -1,5 +1,5 @@
 <template>
-  <div class="WatchFiber pb-12">
+  <div class="WatchFiber py-6">
     <div class="Fiber">
       <span class="text-base font-bold">Màu chỉ</span>
       <div class="text-xs mt-2 text-very-dark-gray">
@@ -35,12 +35,12 @@
             class="text-sm capitalize"
           >
             <v-icon color="blue darken-2"> mdi-chevron-left</v-icon>
-            <span class="capitalize">Pre</span>
+            <span class="capitalize font-normal">Prev</span>
           </v-btn>
         </div>
         <div class="flex justify-center mx-auto">
           <v-btn color="primary" text @click="redirect(x.link)" class="text-sm">
-            <span class="capitalize">Next</span>
+            <span class="capitalize font-normal">Next</span>
             <v-icon color="blue darken-2"> mdi-chevron-right</v-icon>
           </v-btn>
         </div>
@@ -82,13 +82,13 @@
             class="text-sm capitalize"
           >
             <v-icon color="blue darken-2"> mdi-chevron-left</v-icon>
-            <span class="capitalize">Pre</span>
+            <span class="capitalize font-normal">Prev</span>
           </v-btn>
         </div>
         <div class="flex justify-center mx-auto">
           <v-btn color="primary" text @click="redirect(x.link)" class="text-sm">
-            <span class="capitalize">Next</span>
-            <v-icon color="blue darken-2"> mdi-chevron-right</v-icon>
+            <span class="capitalize font-normal">Next</span>
+            <v-icon color="blue darken-2 text-xs"> mdi-chevron-right</v-icon>
           </v-btn>
         </div>
       </div>
@@ -136,7 +136,11 @@ export default {
 };
 </script>
 <style>
-.radio {
-  font-size: 10px !important;
+.radio .v-input--selection-controls__input .v-icon {
+  font-size: 14px !important;
 }
+.v-label {
+  font-size: 14px;
+}
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto py-7 mt-5" max-width="263px">
+  <v-card class="mx-auto py-7 mt-5" max-width="263" max-height="690">
     <div class="pl-4">
       <h2 class="font-bold">TỔNG QUAN ĐƠN HÀNG</h2>
       <v-divider class="my-4 mr-5"></v-divider>
