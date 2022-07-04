@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <v-stepper alt-labels class="stepper text-base" v-model="this.e1">
+    <v-stepper alt-labels class="stepper text-base" :v-model="this.e1">
       <v-stepper-header class="bg-background">
         <template v-for="(item, n) in items">
           <v-stepper-step
@@ -20,7 +19,6 @@
         </v-stepper-content>
       </v-stepper-items> -->
     </v-stepper>
-  </div>
 </template>
 <script>
 // import DesignView from '@/views/DesignView.vue';

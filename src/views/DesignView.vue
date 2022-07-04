@@ -17,8 +17,8 @@
         </v-breadcrumbs>
         <step-by-step
           class="w-3/5"
-          :step="this.step"
-          :complete="this.complete"
+          :step="2"
+          :v-model="this.e1"
         />
         <div class="font-bold mt-5">HÌNH ẢNH MÔ PHỎNG</div>
         <div class="grid grid-cols-3">
@@ -116,7 +116,8 @@ export default {
     TotalOrder,
   },
   data: () => ({
-    step: "1",
+    step: 2,
+    e1:1,
     complete: false,
     items: [
       {

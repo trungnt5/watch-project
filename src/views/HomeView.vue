@@ -14,7 +14,7 @@
           </v-breadcrumbs-item>
         </template>
       </v-breadcrumbs>
-      <step-by-step class="w-3/5" />
+      <step-by-step class="w-3/5" v-model="this.e1" step="this.step"/>
       <v-card max-width="728" class="py-7">
         <div class="flex flex-col justify-center text-center">
           <span clas="m">Chọn sản phẩm mà bạn muốn tự thiết kế</span>
@@ -53,6 +53,7 @@ export default {
     disabled:true,
     complete:false,
     step: 0,
+    e1: 2,
     items: [
       {
         text: "Trang chủ",
