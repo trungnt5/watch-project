@@ -4,7 +4,7 @@
         <template v-for="(item, n) in items">
           <v-stepper-step
             :key="`${n}-step`"
-            :step="n+1"
+            :step="item"
             :complete = "e1 > n"
             class="whitespace-nowrap"
           >
@@ -18,6 +18,24 @@
          <design-view />
         </v-stepper-content>
       </v-stepper-items> -->
+      <v-stepper-items>
+      <v-stepper-content step="1">
+       
+
+        <v-btn
+          color="primary"
+          @click="e1 = 2"
+        >
+          Continue
+        </v-btn>
+
+        <v-btn text>
+          Cancel
+        </v-btn>
+      </v-stepper-content>
+
+     
+    </v-stepper-items>
     </v-stepper>
 </template>
 <script>

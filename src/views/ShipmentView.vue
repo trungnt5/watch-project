@@ -1,23 +1,6 @@
 <template>
   <div>
-    <v-container>
-      <v-breadcrumbs :items="items" divider=">" class="text-black px-0">
-        <template v-slot:item="{ item }">
-          <v-breadcrumbs-item :disabled="item.disabled">
-            <router-link
-              :to="item.to"
-              :style="`color: ${item.color}`"
-              class="no-underline"
-            >
-              {{ item.text }}
-            </router-link>
-          </v-breadcrumbs-item>
-        </template>
-      </v-breadcrumbs>
-      <step-by-step class="w-3/5" />
-      <span class="font-bold">THÔNG TIN GIAO HÀNG</span>
-      <div class="grid grid-cols-3 py-10">
-        <v-card max-width="823" class="px-5 py-7 col-span-2 gap-1">
+    
           <shipment-form />
           <v-col cols="12" class="flex justify-between mt-10">
             <v-btn
@@ -48,14 +31,12 @@
 </template>
 
 <script>
-import StepByStep from "../components/StepByStep";
 import TotalOrder from "@/components/TotalOrder.vue";
 import ShipmentForm from "@/components/ShipmentForm.vue";
 
 export default {
   name: "ShipmentView",
   components: {
-    StepByStep,
     TotalOrder,
     ShipmentForm,
   },

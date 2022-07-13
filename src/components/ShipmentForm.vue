@@ -91,10 +91,11 @@
               :key="n"
               :label="`${n}`"
               :value="n"
+              class="py-1"
             ></v-radio>
           </v-radio-group>
         </v-col>
-        <v-col cols="9" class="border border-gray p-5 grid grid-cols-1 gap-1">
+        <v-col cols="12" class="border border-gray p-5 mt-20 gap-1">
           <span
             >Quý khách vui lòng chuyển khoản đến một trong các tài khoản
             sau</span
